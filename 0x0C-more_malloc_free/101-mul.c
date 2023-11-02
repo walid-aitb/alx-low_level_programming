@@ -14,7 +14,9 @@ void _print(char *str, int l)
 	while (i < l)
 	{
 	if (str[i] != '0')
- 	j = 1;
+	{
+		j = 1;
+	}
 	if (j || i == l - 1)
 	_putchar(str[i]);
 	i++;
@@ -68,7 +70,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 int check_for_digits(char **av)
 
 {
-   int i, j;
+	int i, j;
 
 	for (i = 1; i < 3; i++)
 	{
@@ -126,7 +128,7 @@ int main(int argc, char *argv[])
 	ln = l1 + l2 + 1;
 	a = malloc(ln * sizeof(char));
 	if (a == NULL)
-	{	
+	{
 	for (ti = 0; e[ti]; ti++)
 	_putchar(e[ti]);
 	exit(98);
