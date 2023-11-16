@@ -3,7 +3,7 @@
 /**
  * print_list - function that prints all the elements of a linked list
  * @h: pointer to the list_t to print
- * return - 0
+ * Return: number of elements in the linked list
  */
 
 size_t print_list(const list_t *h)
